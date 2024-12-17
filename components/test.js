@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 export default function Test() {
   const [count, setCount] = useState(0);
 
-  const textColour = count < 0 ? "text-red-500" : "text-green-500";
+  const textColour =
+    count < 0 ? "text-red-500" : count > 0 ? "text-green-500" : "text-white";
 
   console.log("Test component render begun, count is", count);
 
